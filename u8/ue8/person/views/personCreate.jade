@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        title personCreate.jade
+        meta(charset="UTF-8")
+    body
+        h1 Create New Person
+        form(method="POST", action="/person/create")
+            label Id:
+            input(type="text", name="id", value = "")
+            br
+            label Name:
+            input(type="text", name="name", value = "")
+            br
+            label Age:
+            input(type="text", name="age", value = "")
+            br
+            label Wage:
+            input(type="text", name="wage", value = "")
+            br
+            label Active:
+            input(type="text", name="active", value = "")
+            br
+            input(type="submit", value="Submit")
+            input(type="reset", value="Reset")

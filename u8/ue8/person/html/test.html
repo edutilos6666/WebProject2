@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><title>example4.jade</title><meta charset="UTF-8"><script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script><script type="text/javascript">$(function() {
+    $("#btnSubmit").on("click", function(ev) {
+        var fname = $("#fname").val(),
+            lname = $("#lname").val(),
+            age = $("#age").val(),
+            wage = $("#wage").val(),
+            gender = $("#gender").val();
+        var nl = "\r\n";
+        var msg = "fname = "+ fname + nl
+            + "lname = "+ lname + nl
+            + "age = "+ age + nl
+            + "wage = " + wage + nl;
+        console.log(msg);
+        alert(msg);
+    });
+
+    $("#btnReset").on("click", function(ev) {
+        $("input").val("");
+    });
+});
+
+</script></head><style type="text/css"></style><body><h1>Simple Form Example</h1><form action="" method="GET"><label for="fname">first name:</label><input type="text" id="fname"><br><label for="lname">last name:</label><input type="text" id="lname"><br><label for="age">age:</label><input type="text" id="age"><br><label for="wage">wage:</label><input type="text" id="wage"><br><label for="gender">gender:</label><select id="gender"><option value="male">Male</option><option value="female">Female</option><option value="other">Other</option></select><br><button type="button" id="btnSubmit">Submit</button><button type="button" id="btnReset">Reset</button><br></form></body></html>
+

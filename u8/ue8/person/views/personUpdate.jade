@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        title personUpdate.jade
+        meta(charset="UTF-8")
+    body
+        form(method="POST", action="/person/update")
+            label Id:
+            input(type="text", value="#{person.id}", name="id")
+            br
+            label Name:
+            input(type="text", value="#{person.name}", name="name")
+            br
+            label Age:
+            input(type="text", value="#{person.age}", name="age")
+            br
+            label Wage:
+            input(type="text", value="#{person.wage}", name="wage")
+            br
+            label Active:
+            input(type="text", value="#{person.active}", name="active")
+            br
+            input(type="submit", value="Submit")
+            input(type="reset", value="Reset")
+            br

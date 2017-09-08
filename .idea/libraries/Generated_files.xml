@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/coffeescript/ArrayAndObjectExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/Operators.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/DateExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/Conditionals.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/Example1.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/MathExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/Loops.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/ExceptionExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/Comprehensions.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/FunctionExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/StringExample.js" />
+        <item url="file://$PROJECT_DIR$/coffeescript/ClassExample.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/coffeescript/ArrayAndObjectExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/DateExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/Example1.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/MathExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/ExceptionExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/FunctionExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/ClassExample.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/Operators.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/Conditionals.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/Loops.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/Comprehensions.js" />
+      <root url="file://$PROJECT_DIR$/coffeescript/StringExample.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

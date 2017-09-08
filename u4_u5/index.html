@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+
+    <!-- bootstrap -->
+    <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          crossorigin= "anonymous" />
+
+    <!--jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+
+    <style>
+
+    </style>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<button type="button" class="btn btn-info" id="btnLoadRss">Load RSS</button>
+<div id="rss-container">
+
+</div>
+<h1>Comments</h1>
+<div id="comments">
+</div>
+<h1>Add New Comment</h1>
+<form class="form">
+    username: <input type="text" class="form-control" id="username"/> <br/>
+    comment: <textarea id="user-comment" class="form-control" ></textarea>
+    <br/>
+    <button type="button" class="btn btn-info" id="btnAddComment">Add Comment</button>
+    <br/>
+</form>
+</body>
+</html>

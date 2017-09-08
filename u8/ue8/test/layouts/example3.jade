@@ -1,0 +1,64 @@
+doctype html
+html(lang=en)
+    head
+        title=pageTitle
+
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js"
+               integrity ="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous")
+        script(type="text/javascript").
+            function add(a, b) {
+                return a + b;
+            }
+
+            function subtract(a, b) {
+                return a - b ;
+            }
+
+            function multiply(a, b) {
+                return a*b ;
+            }
+            function divide(a, b) {
+                return a /b;
+            }
+            var n1 = 20 , n2 = 10 ;
+
+            $(function() {
+                $("#btnAdd").on("click", function(ev) {
+                    console.log(add(n1, n2));
+                });
+
+                $("#btnSubtract").on("click", function(ev) {
+                    console.log(subtract(n1, n2));
+                });
+                $("#btnMultiply").on("click", function(ev){
+                    console.log(multiply(n1, n2));
+                });
+                $("#btnDivide").on("click", function(ev) {
+                    console.log(divide(n1, n2));
+                });
+            });
+        style(type="text/css").
+            div.box {
+                width:100px;
+                height:100px;
+                border:1px solid black;
+                background-color:yellow;
+                display:inline-block;
+                margin:10px;
+            }
+        body
+            h1 Example3
+            div.box
+            div.box
+            div.box
+            div.box
+            div#controller
+                button#btnAdd(type="button") Add Values
+                br
+                button#btnSubtract(type="button") Subtract Values
+                br
+                button#btnMultiply(type="button") Multiply Values
+                br
+                button#btnDivide(type="button") Divide Values
+                br

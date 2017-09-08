@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+  <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  <!-- JQUERY -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div id="sse">
+ <eventsource src="http://localhost:8080"  id="es"/>
+</div>
+
+
+<div id="container">
+
+</div>
+
+<script>
+    document.getElementsByTagName("eventsource")[0].addEventListener("helloWorldEvent", eventHandler , false);
+    function eventHandler(ev) {
+        console.log("inside eventHandler");
+        $("#container").html(ev.data);
+    }
+</script>
+</body>
+</html>

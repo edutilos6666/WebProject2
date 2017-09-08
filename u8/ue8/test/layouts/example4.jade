@@ -1,0 +1,56 @@
+doctype html
+html(lang=en)
+    head
+        title=pageTitle
+        meta(charset="UTF-8")
+        script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
+               integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+               crossorigin="anonymous")
+        script(type="text/javascript").
+            $(function() {
+                $("#btnSubmit").on("click", function(ev) {
+                    var fname = $("#fname").val(),
+                        lname = $("#lname").val(),
+                        age = $("#age").val(),
+                        wage = $("#wage").val(),
+                        gender = $("#gender").val();
+                    var nl = "\r\n";
+                    var msg = "fname = "+ fname + nl
+                    + "lname = "+ lname + nl
+                    + "age = "+ age + nl
+                    + "wage = " + wage + nl;
+                    console.log(msg);
+                    alert(msg);
+                });
+
+                $("#btnReset").on("click", function(ev) {
+                    $("input").val("");
+                });
+            });
+
+
+    style(type="text/css").
+    body
+        h1 Simple Form Example
+        form(action="" method="GET")
+            label(for="fname") first name:
+            input(type="text" id="fname")
+            br
+            label(for="lname") last name:
+            input(type="text" id="lname")
+            br
+            label(for="age") age:
+            input(type="text" id="age")
+            br
+            label(for="wage") wage:
+            input(type="text" id="wage")
+            br
+            label(for="gender") gender:
+            select(id="gender")
+               option(value="male") Male
+               option(value="female") Female
+               option(value="other") Other
+            br
+            button(type="button"  id="btnSubmit") Submit
+            button(type="button" id="btnReset") Reset
+            br

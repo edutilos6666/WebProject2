@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- bootstrap-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  <!-- JQUERY -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<button type="button" id="btnStartWW">start Worker</button>
+<br/>
+<button type="button" id="btnTerminateWW">terminate Worker</button>
+<br/>
+<button type="button" id="btnSayHello">say hello</button>
+<br/>
+
+<script>
+  $(function() {
+    var worker ;
+     function startWorker() {
+       worker = new Worker("bgtask.js");
+       worker.onmessage = function(event) {
+         console.log(`received: ${event.data}`);
+       };
+
+       worker.onerror = function(event) {
+         console.log(event.message);
+       };
+     }
+
+     function terminateWorker() {
+       if(worker !== undefined) {
+         worker.terminate();
+       }
+     }
+
+
+     function sayHello() {
+       console.log("hello world!");
+     }
+
+     $("#btnStartWW").on("click", startWorker);
+
+     $("#btnTerminateWW").on("click", terminateWorker);
+
+     $("#btnSayHello").on("click", sayHello);
+  });
+</script>
+</body>
+</html>

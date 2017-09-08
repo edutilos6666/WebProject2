@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        title people.jade
+        meta(charset="UTF-8")
+    body
+        table
+            tr
+              th Id
+              th Name
+              th Age
+              th Wage
+              th Active
+              th Update
+              th Remove
+            for person in people
+               tr
+                 td
+                   a(href="/person/#{person.id}")=person.id
+                 td=person.name
+                 td=person.age
+                 td=person.wage
+                 td=person.active
+                 td
+                   a(href="/person/update/#{person.id}") Update
+                 td
+                   a(href="/person/remove/#{person.id}") Remove
+        br
+        a(href="/person/create") Create New Person
+        br

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <!-- bootstrap -->
+    <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          crossorigin= "anonymous" />
+
+    <!--jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+
+    <style>
+        div.container {
+            width:80%;
+            margin:auto;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div class="container">
+ <form class="form">
+     <h1>Ohm's Law Calculator</h1>
+     <div class="form-group">
+         <label for="volts">Volts</label>
+         <input type="text" id="volts" class="form-control" />
+     </div>
+
+     <div class="form-group">
+         <label for="ohms">Ohms</label>
+         <input type="text" id="ohms" class="form-control" />
+     </div>
+
+     <div class="form-group">
+         <label for="amps">Amps</label>
+         <input type="text" id="amps" class="form-control" />
+     </div>
+
+     <div class="form-group">
+         <label for="watts">Watts</label>
+         <input type="text" id="watts" class="form-control" />
+     </div>
+
+     <div class="form-group">
+         <button type="button" class="btn btn-info" id="btnSolve">Solve</button>
+         <button type="button" class="btn btn-danger" id="btnReset">Reset</button>
+     </div>
+ </form>
+</div>
+</body>
+</html>

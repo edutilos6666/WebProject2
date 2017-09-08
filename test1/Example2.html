@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      div {
+          width:200px;
+          height:200px;
+          border: 1px solid black;
+          transition: all 2s;
+      }
+  </style>
+    <script>
+        function changePropsDiv() {
+            var div = document.getElementById("div1");
+            div.style.width = "300px";
+            div.style.height = "300px";
+            div.innerHTML = "hello world!";
+            div.style.textAlign = "center";
+            div.style.backgroundColor = "yellow";
+            div.style.fontSize = "20px";
+            div.style.border = "3px dotted blue";
+        }
+
+        function restorePropsDiv() {
+            var div = document.getElementById("div1");
+            div.style.width = "200px";
+            div.style.height = "200px";
+            div.innerHTML = "";
+            div.style.border = "1px solid black";
+            div.style.backgroundColor = "white";
+        }
+    </script>
+</head>
+<body>
+ <h1>Turn on/off bulb</h1>
+<img src="pic_bulboff.gif" style="width:100px;height:100px" alt="img" id="bulb" />
+<br/>
+<button onclick="document.getElementById('bulb').src = 'pic_bulboff.gif'">Turn off bulb</button>
+ <button onclick="document.getElementById('bulb').src = 'pic_bulbon.gif'">Turn on bulb</button>
+<br/>
+ <br/>
+<div id="div1"></div>
+<br/>
+<button onclick="changePropsDiv();">change div props</button>
+<button onclick="restorePropsDiv();">restore div props</button>
+ <br/>
+</body>
+</html>

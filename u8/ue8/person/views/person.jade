@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        title person.jade
+        meta(charset="UTF-8")
+    body
+        h1 Person Properties
+        table
+            tr
+              th Key
+              th Value
+            tr
+              td Id
+              td=person.id
+            tr
+              td Name
+              td=person.name
+            tr
+              td Age
+              td=person.age
+            tr
+              td Wage
+              td=person.wage
+            tr
+              td Active
+              td=person.active
+        a(href="/person/all") Return Back
+        br
